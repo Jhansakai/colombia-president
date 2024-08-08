@@ -15,3 +15,9 @@ def detail_presidentes(request, id):
         "presidente": presidente
     }
     return render(request, 'myapp/detail-presidentes.html', context)
+
+def home(request):
+    context = {
+        
+    }
+    return render(request, 'myapp/home.html', context)
