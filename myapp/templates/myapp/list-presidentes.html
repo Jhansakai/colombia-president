@@ -14,6 +14,7 @@
         <th>Fecha Inicio</th>
         <th>Fecha Final</th>
         <th>Partido</th>
+        <th>Aciones</th>
       </tr>
     </thead>
     <tbody>
@@ -24,6 +25,7 @@
           <td> {{ presidente.inicio }}</td>
           <td> {{ presidente.final }}</td>
           <td> {{ presidente.partido.name }}</td>
+          <td>  <a href="/lista_presidentes/{{presidente.numero}}/delete"> Eliminar </a> / <a href="/lista_presidentes/{{presidente.numero}}/update"> Actualizar </a></td>
         </tr>
       {% endfor %}
 
