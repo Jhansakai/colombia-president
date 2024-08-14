@@ -1,0 +1,33 @@
+{% extends "farmacia/base.html" %}
+
+{% block content %}
+
+<!-- Containers -->
+<div class="container-fluid p-5 bg-success text-white text-center">
+  <h1>Lista Categorias</h1>
+</div>
+
+<div class="container mt-4">
+    <!-- Contenedor de la tabla -->
+    <div class="mt-2 mb-2 ms-2 me-2">
+        <!-- Tabla -->
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col" class="text-light bg-secondary">ID</th>
+                    <th scope="col" class="text-light bg-secondary">Categoria</th>   
+                </tr>
+            </thead>
+            <tbody>
+            {% for categoria in categorias %}   
+            <tr>
+                <td>{{ categoria.id }}</a> </td>
+                <td>{{ categoria.name }}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock %}
